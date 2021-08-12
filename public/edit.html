@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Add Ingredients</title>
+</head>
+<body>
+    <header>
+            <div class="flex">
+                    <h2>Add Ingredients</h2>
+                    <h4>Add Ingredients & Instructions</h4> 
+               </div>
+    </header>
+   <div class="wrapper">
+       <div class="wrapper_central">
+            <input type="text" class="text" placeholder="  Recipe Title" id="recipeTitle">
+            <textarea id="recipeInstruction" placeholder="  Recipe Instruction"cols="30" rows="10"></textarea>
+            <input type="text" name="cooking_time" id="cooking_time" placeholder=" Cooking time">
+            <input type="number" name="serves" id="serves" placeholder=" Serves">
+        
+            <div class="add_ingredients">
+                <h3>Ingredients</h3>
+                <div id="ingredient-List">
+                   
+            
+        
+                </div>
+            <form id="ingredients-form">
+                <input id="ingredientInput"type="text" name="newIngredient" class="text" placeholder=" Ingredient">
+                <button class="addIngredient">Add</button>
+            </form>
+            </div>
+        
+            <button id="update-recipe">Save </button> <span id="info"><i class="fa fa-info-circle"></i>Save your Recipe to store it</span>
+            
+            <div class="delete-zone">
+                <button id="delete">Delete</button>
+            </div>
+           
+        
+           </div>
+
+       </div>
+      
+   
+    
+       <script src="/scripts/edit-bundle.js"></script>
+
+
+</body>
+</html>
