@@ -11,7 +11,7 @@
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod",
-    "deploy": "gh-pages -d public/scripts"
+    "deploy": "gh-pages -d public"
   },
   "author": "Issa Mohamed",
   "license": "ISC",
