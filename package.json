@@ -6,12 +6,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
-    "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod",
-    "deploy": "gh-pages -d public"
+    "build": "webpack --mode production",
+    "dev-server": "webpack-dev-server --mode development",
+    "deploy": "npm run build && gh-pages -d public"
   },
   "author": "Issa Mohamed",
   "license": "ISC",
