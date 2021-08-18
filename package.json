@@ -1,19 +1,27 @@
 {
+  "homepage": "https://Issa0712.github.io/recipeApp",
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server": "webpack-dev-server --mode development --watch",
-    "build": "webpack --mode production"
+    "serve": "live-server public/",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod",
+    "deploy": "gh-pages -d public"
   },
-  "author": "",
+  "author": "Issa Mohamed",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gh-pages": "^3.2.3",
     "live-server": "^1.2.1",
     "uuid": "^8.3.1",
     "webpack": "^4.44.1",
