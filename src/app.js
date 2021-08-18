@@ -44,7 +44,7 @@ if (addRecipe) {
             serves: '',
             ingredients: []
       })
-        location.assign(`../edit.html#${id}`)
+        location.assign(`../recipeApp/edit.html#${id}`)
         saveRecipes(recipes)
         console.log(recipes)
  })
