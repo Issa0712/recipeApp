@@ -12,11 +12,20 @@ $container-width: 600px;
     padding: 0;
     font-family: 'Lato', 'sans-serif';
 
+    
+
+}
+
+html{
+    overflow-x: hidden;
+
 }
 
 body{
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
+
     
 }
 button{
@@ -52,16 +61,16 @@ header{
             margin: 5px 0 60px;
             font-size: 20px;
             font-weight: bold;
-            outline: none;
             padding: 10px;
             position: relative;
-            bottom: -25px;
+            bottom: -2px;
+        
          
             
             
         }
         input:focus {
-            border: 2px solid black;
+            border: 2px solid rgb(117, 19, 93);
         }
     }
 }
@@ -78,14 +87,14 @@ header{
     .flex{
        width: $container-width;
        margin: 0 auto;
+       
       
-       button {
+       #add-recipe {
            background: rgba(117, 19, 93, 0.73);
-           margin: 30px 220px 40px;
+           margin-left: 170px;
            height: 30px;
-           width:  150px;
+           width:  170px;
            border: none;
-           display: inline-block;
            color: white;
            font-size: 22px;
            font-weight: bold;
@@ -108,7 +117,7 @@ a {
     color: rgba(117, 19, 93, 0.73); 
     text-decoration: none;
     text-align: center;
-    margin: 25px;
+    margin: 40px 20px;
     border: 2px solid #333;
     &:hover{
         @keyframes fade {
@@ -165,5 +174,52 @@ a {
 }
 
 
+@media screen and (max-width: 640px){
 
+  #search-recipe{
+   width: 90%;
+   margin: 5px 0 60px 20px;
+     
+   }
+}
 
+@media screen and (max-width: 530px){
+
+    .item{
+        width: 85%;
+    }
+
+    // #add-recipe{
+    //  margin: 30px 170px 40px;
+       
+    //  }
+  }
+
+  @media screen and (max-width: 460px){
+      .item {
+          width: 80%;
+      }
+
+    #add-recipe{
+     margin: 30px 150px 40px;
+       
+     }
+  }
+
+  @media screen and (max-width: 385px){
+    .item {
+        width: 70%;
+    }
+
+  
+}
+
+@media screen and (max-width: 370px) {
+   .container .flex #add-recipe {
+        margin-left: 80px;
+    }
+    .item{
+        width: 80%;
+    }
+   
+}

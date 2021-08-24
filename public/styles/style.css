@@ -27,7 +27,7 @@
 }
 
 .wrapper_central #recipeInstruction {
-  width: 560px;
+  width: 90%;
   height: 152px;
 }
 
@@ -144,9 +144,14 @@
   font-family: 'Lato', 'sans-serif';
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 button {
@@ -191,14 +196,13 @@ header .flex input {
   margin: 5px 0 60px;
   font-size: 20px;
   font-weight: bold;
-  outline: none;
   padding: 10px;
   position: relative;
-  bottom: -25px;
+  bottom: -2px;
 }
 
 header .flex input:focus {
-  border: 2px solid black;
+  border: 2px solid #75135d;
 }
 
 .container {
@@ -214,20 +218,19 @@ header .flex input:focus {
   margin: 0 auto;
 }
 
-.container .flex button {
+.container .flex #add-recipe {
   background: rgba(117, 19, 93, 0.73);
-  margin: 30px 220px 40px;
+  margin-left: 170px;
   height: 30px;
-  width: 150px;
+  width: 170px;
   border: none;
-  display: inline-block;
   color: white;
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.container .flex button:hover {
+.container .flex #add-recipe:hover {
   background: rgba(119, 48, 101, 0.73);
 }
 
@@ -236,7 +239,7 @@ a {
   color: rgba(117, 19, 93, 0.73);
   text-decoration: none;
   text-align: center;
-  margin: 25px;
+  margin: 40px 20px;
   border: 2px solid #333;
 }
 
@@ -303,5 +306,42 @@ a h5 span {
 
 a span, a p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  #search-recipe {
+    width: 90%;
+    margin: 5px 0 60px 20px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .item {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .item {
+    width: 80%;
+  }
+  #add-recipe {
+    margin: 30px 150px 40px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .item {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container .flex #add-recipe {
+    margin-left: 80px;
+  }
+  .item {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
